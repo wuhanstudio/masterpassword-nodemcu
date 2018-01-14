@@ -1,4 +1,4 @@
-# MaserPassword on NodeMCU
+# MasterPassword on NodeMCU
 
 <!-- <img src="preview/mpw.jpg" width="600"> -->
 
