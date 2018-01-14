@@ -72,23 +72,29 @@ Oh, Remember you need **Python**.
 
 1. Erase your flash
 
-    Though this is not necessary but recommended.
+    Though this is not necessary but recommended. 
+        
+        sudo make clean
+    
+    - For Linux, you need **sudo** to get access to serial connection.  
 
-        make clean
+    - For Windows, **sudo** is not necessary.
+
+        
 
 2. Copy files
 
     This will get all configuration files ready.
 
-        make install
+        sudo make install
 
 3. Upload Firmware
 
-        make upload_firmware
+        sudo make upload_firmware
 
 4. Upload Server and HTML files
 
-        make upload_all 
+        sudo make upload_all 
 
 5. Done, now connect to it and open your favorite browser
 
