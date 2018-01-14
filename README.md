@@ -1,4 +1,4 @@
-# MasterPassword on NodeMCU
+# Master Password on NodeMCU
 
 <!-- <img src="preview/mpw.jpg" width="600"> -->
 
@@ -46,7 +46,11 @@ Actually I just fit <a href="https://github.com/tmthrgd/mpw-js.git"> mpw-js</a> 
 
 ## Prerequisites
 
-You can just use your favorite esp8266 module. As for now, I've tested all of these modules.
+You can just use your favorite esp8266 module.  
+
+As for now, I've tested all of these modules.  
+
+You just need to get one.
 
 <img src="preview/modules.jpg">
 
