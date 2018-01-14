@@ -13,13 +13,13 @@ Always want to find a password manager, yet still considering security problems?
 Your passwords are generated instantly and will **never** be stored anywhere.
 
 
-> No Storage - Nothing To Intercept - Nothing to Lose
+> No Storage - Nothing to Intercept - Nothing to Lose
 
 This project makes it possible to take it with you everywhere like this : 
 
 <img src="preview/esp8266.jpg">
 
-Wow, a pretty cute tiny password manager. It generates a wireless network which you can connect  with :
+A pretty cute tiny password manager. It generates a wireless network which you can connect  with :
 
         SSID: masterpassword
         PSK : masterpassword
@@ -32,7 +32,9 @@ Here it is :
 
 <img src="preview/tablet.jpg">
 
-Now you can generate your passwords instantly. Of course, nothing is gonna to be stored in it thus nothing to lose even if someone else got this module. 
+Now you can generate your passwords instantly. Of course, nothing is gonna to be stored in it thus nothing to lose even if someone else got this module. Still you can regenerate your passwords later. To know more, you can visit :
+
+> http://masterpasswordapp.com
 
 ## How it works
 
