@@ -11,7 +11,6 @@ XChip's NodeMCU IDE
 srv=net.createServer(net.TCP) 
 srv:listen(80,function(conn) 
 
-   local rnrn=0
    local Status = 0
    local DataToGet = 0
    local method=""
@@ -68,17 +67,16 @@ srv:listen(80,function(conn)
 		end
 	end
 
-if foundmatch == 0 then
-	--- print ("Found no match, setting index")
-    url="index.html"
-end
+    if foundmatch == 0 then
+        --- print ("Found no match, setting index")
+        url="index.html"
+    end
 
     -- it wants a file in particular
     if url~="" then
         DataToGet = 0
         return
     end    
-
   
   end)
   
@@ -90,7 +88,7 @@ end
             file.close()
             if line then
                 conn:send(line)
-				-- print ("sending:" .. DataToGet)
+				--- print ("sending:" .. DataToGet)
                 DataToGet = DataToGet + 1024    
                 if (string.len(line)==1024) then
                     return
@@ -100,8 +98,9 @@ end
     end
 
     conn:close()
+    conn = nil
+    collectgarbage()
   end)
 end)
 
 print("HTTP Server is now listening. Free Heap:", node.heap())
-

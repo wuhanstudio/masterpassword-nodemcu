@@ -32,18 +32,16 @@ function startup()
     end
 
  -- prepare abort procedure
-    abort = false
-    print('Send some xxxx Keystrokes now to abort startup.')
-    -- if <CR> is pressed, abort
-      uart.on("data", "x", 
-      function(data)
-        print("receive from uart:", data)
-        if data=="x" then
-          abort = true 
-          uart.on("data") 
-        end        
-    end, 0)
+ -- abort = false
+ -- print('Send some xxxx Keystrokes now to abort startup.')
+ -- if <CR> is pressed, abort
+ --     uart.on("data", "x", 
+ --     function(data)
+ --       print("receive from uart:", data)
+ --       if data=="x" then
+ --         abort = true 
+ --         uart.on("data") 
+ --       end        
+ --   end, 0)
 
-
-print ('Will launch servers in 5 seconds...')
-tmr.alarm(0,5000,0,startup)
+startup()
