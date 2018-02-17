@@ -7,3 +7,6 @@
 [submodule "nodemcu-httpserver"]
 	path = nodemcu-httpserver
 	url = https://github.com/marcoskirsch/nodemcu-httpserver.git
+[submodule "esp8266-luaupload"]
+	path = esp8266-luaupload
+	url = https://github.com/liamim/esp8266-luaupload.git
