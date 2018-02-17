@@ -6,6 +6,20 @@
 
 <!-- <img src="preview/cellphone.jpg" width="200"> -->
 
+## This Branch
+
+This branch makes it possible to automatically open Masterpassword Webpage.  
+
+Everytime you connect to this module, your cellphone will automatically open the website for you.
+
+Still, you can navigate to it  manually :
+
+    http://192.168.4.1
+
+And due to some known issues of the latest firmware, captive portal isn't working. Thus I'm using an older version of nodemcu firmware. 
+
+    The baudrate is 9600 now
+
 ## What's this?
 
 Always want to find a password manager, yet still considering security problems? Thanks to <a href="http://masterpasswordapp.com/">Master Password</a>, now here comes a solution.
@@ -24,9 +38,9 @@ A pretty cute tiny password manager. It generates a wireless network which you c
         SSID: masterpassword
         PSK : masterpassword
 
-Then open your favorite browser and navigate to :
+Or you can open your favorite browser and navigate to :
 
-        http://192.168.111.1
+        http://192.168.4.1
 
 Here it is :
 
@@ -87,26 +101,25 @@ Oh, Remember you need **Python**.
     - For Windows, **sudo** is not necessary.
 
         
-
-2. Copy files
-
-    This will get all configuration files ready.
-
-        sudo make install
-
-3. Upload Firmware
+2. Upload Firmware
 
         sudo make upload_firmware
 
 4. Upload Server and HTML files
 
-        sudo make upload_all 
+        sudo make upload 
+
+    This will open a GUI program for your. Select baudrate 9600, then connect. Click *Chip info* on the right bottom to check the connection.
+
+    Choose *Upload ...* button and then select all files in the directory of *http* which contains **"dns-liar.lua" "index.html" "init.lua" "one.min.js" "server.lua"**
+
+    Reset your module.
 
 5. Done, now connect to it and open your favorite browser
 
         SSID: masterpassword       PSK : masterpassword
 
-        http://192.168.111.1
+        http://192.168.4.1
 
 ## Related Projects
 
@@ -129,5 +142,3 @@ Nodemcu Uploader :
 Nodemcu Http Server :
 
 > https://github.com/marcoskirsch/nodemcu-httpserver
-
-> 

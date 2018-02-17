@@ -41,4 +41,6 @@ upload_firmware:
 # Upload one files only
 upload:
 	java -jar ESPlorer/ESPlorer.jar
-	
+	@echo
+	@echo "Reset your Module Now"
+	@echo
